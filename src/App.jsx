@@ -2,8 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Counter from './counter'
-import Team from './team'
+import Team from './team';
+import Counter from './counter';
+import Users from './users';
+import Friends from './friends';
+
+
+
+
 
 
 function App() {
@@ -23,6 +29,7 @@ function App() {
 
   return (
     <>
+      <h1>React Core Concepts 2</h1>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -31,13 +38,22 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>React Core Concepts 2</h1>
-       
-       
+     
+
+
+
+    
+    <Friends></Friends>
+
+   <Users></Users>
+
+    <Team></Team>
 
     <Counter></Counter>
 
-     
+    
+
+    
 
 
 <button onClick={handleClick}>Click me</button>
